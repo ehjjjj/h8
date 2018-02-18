@@ -1,16 +1,18 @@
-# HW7. Recursion (Regular Expression) Exercise
-## This is an Excercise. It is related to HW8.
+# HW8. Recursion (Regular Expression) Assignment
+## This is an Assignment.
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
-In this exercise you will learn how to use recursion for solving problems, and regular expressions (RegEx). RegEx is used mainly for pattern-matching, parsing, and filtering. Most importantly it is used by compilers such as gcc (C compiler) to translate the high level language to machine language. https://www.tutorialspoint.com/compiler_design/compiler_design_lexical_analysis.htm
+In this assignment you will deepen your understanding of recursion and regular expressions(RegEx). RegEx is used mainly for pattern-matching, parsing, and filtering. Most importantly it is used by compilers such as gcc (C compiler) to translate the high level language to machine language. https://www.tutorialspoint.com/compiler_design/compiler_design_lexical_analysis.htm
 
 More about RegEx : https://www.tutorialspoint.com/java/java_regular_expressions.htm
 
 
 # Learning Goals
-* Use recursion to solve problems by dividing the problem into smaller problems.
+* Use recursion to solve complex problems by dividing the problem into smaller problems.
 * Understanding regular expressions.
+* The concept of pipe (|) and the command sort.
+* Test the coverage of your program using gcov command.
 
 
 ## Some of regular expression metacharacter syntax 
