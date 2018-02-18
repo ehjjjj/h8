@@ -77,7 +77,7 @@ For example, suppose I have main.c that I want to test its coverage.
 
 main.c:
 <pre>
-#include <stdio.h
+#include <stdio.h>
 int main (void)
 {
   int i;
