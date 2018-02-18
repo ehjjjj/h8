@@ -135,7 +135,7 @@ In this assignment you will implement four functions:
 
 For example if DS='0', DE='1', and length=4. Then the outputs (separated by comma) of this function:<br/>
 `0.0, 0.1, 1.0, 1.1, 0.00, 0.01, 0.10, 0.11, 1.00, 1.01, 1.10, 1.11, 00.0, 00.1, 01.0, 01.1, 10.0, 10.1, 11.0, 11.1`
-<br/>
+<br/><br/>
 `createVID()` - This function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The general Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/><br/>
 
 For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. Then the outputs (separated by comma) of this function:<br/>
