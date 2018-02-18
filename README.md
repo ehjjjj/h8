@@ -66,10 +66,10 @@ toDo.txt
 
 gcov is a test coverage program. Use it in concert with GCC to analyze your programs to help create more efficient, faster running code and to discover untested parts of your program. You can use gcov as a profiling tool to help discover where your optimization efforts will best affect your code. You can also use gcov along with the other profiling tool, gprof, to assess which parts of your code use the greatest amount of computing time.
 
-Profiling tools help you analyze your code’s performance. Using a profiler such as gcov or gprof, you can find out some basic performance statistics, such as:
-1-how often each line of code executes.
-2-what lines of code are actually executed.
-3-how much computing time each section of code uses.
+Profiling tools help you analyze your code’s performance. Using a profiler such as gcov or gprof, you can find out some basic performance statistics, such as:<br/>
+1-how often each line of code executes.<br/>
+2-what lines of code are actually executed.<br/>
+3-how much computing time each section of code uses.<br/><br/>
 
 Once you know these things about how your code works when compiled, you can look at each module to see which modules should be optimized. gcov helps you determine where to work on optimization.
 
