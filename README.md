@@ -39,9 +39,9 @@ Mercedes
 
 ## PIPE(|)
 Every standard process in Unix has at least three file descriptors:<br/>
-1\- Standard output (STDOUT), which is the place where the process prints its data (i.e terminal screen or specific file).<br/>
-2\- Standard input  (STDIN),  which is the place it gets its data from (i.e keyboard).<br/>
-3\- Standard error  (STDERR), which is the place where errors and sometimes other out-of-band data goes.<br/><br/>
+1- Standard output (STDOUT), which is the place where the process prints its data (i.e terminal screen or specific file).<br/>
+2- Standard input  (STDIN),  which is the place it gets its data from (i.e keyboard).<br/>
+3- Standard error  (STDERR), which is the place where errors and sometimes other out-of-band data goes.<br/><br/>
 
 A Unix pipe (|) connects the STDOUT file descriptor of the first process to the STDIN of the second. So, when the first process writes to its STDOUT, that output can be immediately read (from STDIN) by the second process. In other words, the output of the first process will be sent as an input to the second process.
 
@@ -73,7 +73,24 @@ Profiling tools help you analyze your code’s performance. Using a profiler suc
 
 Once you know these things about how your code works when compiled, you can look at each module to see which modules should be optimized. gcov helps you determine where to work on optimization.
 
+For example, suppose I have main.c that I want to test its coverage.
 
+main.c:
+<pre>
+#include <stdio.h>
+int main (void)
+{
+  int i;
+  for (i = 1; i < 10; i++)
+    {
+      if (i % 3 == 0)
+        printf ("%d is divisible by 3\n", i);
+      if (i % 11 == 0)
+        printf ("%d is divisible by 11\n", i);
+    }
+  return 0;
+}
+<pre/>
 
 
 
