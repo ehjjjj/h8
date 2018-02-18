@@ -11,7 +11,7 @@ More about RegEx : https://www.tutorialspoint.com/java/java_regular_expressions.
 # Learning Goals
 * Use recursion to solve complex problems.
 * Understanding the concept of pipe (|) and the command sort.
-* Test the coverage of your program using gcov command.
+* Test the coverage of your program using gcov.
 
 ## SORT command
 Command sort which is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The sort command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default sort command will sort lines alphabetically.
@@ -62,67 +62,20 @@ pa08.c
 toDo.txt
 </pre>
 
+## Test Coverage (GCOV)
+
+gcov is a test coverage program. Use it in concert with GCC to analyze your programs to help create more efficient, faster running code and to discover untested parts of your program. You can use gcov as a profiling tool to help discover where your optimization efforts will best affect your code. You can also use gcov along with the other profiling tool, gprof, to assess which parts of your code use the greatest amount of computing time.
+
+Profiling tools help you analyze your code’s performance. Using a profiler such as gcov or gprof, you can find out some basic performance statistics, such as:
+1-how often each line of code executes.
+2-what lines of code are actually executed.
+3-how much computing time each section of code uses.
+
+Once you know these things about how your code works when compiled, you can look at each module to see which modules should be optimized. gcov helps you determine where to work on optimization.
 
 
 
 
-## Examples
-`NOTE : The regular expression matches as long as possible`<br/> 
-
-A- "\d" This RegEx will match any digit in a String.<br/>
-- "a2b" The matcher will return 2.<br/>
-- "a2b3" The matcher will return 2 first, then it will return 3.<br/>
-- "123b" The matcher will return 1 first, then it will return 2, and last it will return 3.<br/>
-
-B- "\d+" This Regex will match any sequance of digits with length of one or more.<br/>
-- "123b45" The matcher will return 123 first, then it will return 45.
-- "1A4856.12" The matcher will return 1 first, then it will return 4856, and last it will return 12.
-
-C- "\d*" This Regex will match any sequance of digits with length of zero or more.<br/>
-- "123b45" The matcher will return 123 first, then it will return empty string for 'b', and last it will return 45.
-- "1A4856.12" The matcher will return 1 first, then it will return empty string for 'A', then it will return 4856, then it will return empty string for '.', and last it will return 12.
-
-D- "\[a-zA-z]+" This Regex will match any sequance of english alphabet with length of one or more.<br/>
-- "ABC1DEFG2Q" The matcher will return ABC first, the it will return DEFG, and last it will return Q.
-- "1234" The matcher will return NULL (no match, not empty string).
-
-E- "^\d+" This Regex will match any sequance of digits with length of one or more at the start of the string. Note the (^) at the beginning of the RegEx.<br/>
-- "123AA34Af412" The matcher will return 123 only.
-- "A12345" The matcher will return nothing.
-
-F- "\d+$" This Regex will match any sequance of digits with length of one or more at the end of the string. Note the ($) at the end of the RegEx.<br/>
-- "123AA34Af412" The matcher will return 412 only.
-- "12345A" The matcher will return NULL (no match, not empty string).
-- "A12345" The matcher will return 12345.
-
-G- "^\d+$" This Regex will match any sequance of digits with length of one or more that starts and ends the string.<br/>
-- "A12345" The matcher will return NULL (no match, not empty string), the string starts with A.
-- "123A45" The matcher will return NULL (no match, not empty string), the "123" does not end the string, and the "45" does not start the string .
-- "12345A" The matcher will return NULL (no match, not empty string), the string ends with A.
-- "12345" The matcher will return 12345.
-
-H- "\[ \d | \[a-zA-Z] ]+" This Regex will match any sequance of digits and english alphabet with length of one or more. <br/>
-- "A12s2345" The matcher will return A12s2345.
-- "A12s2.34A5" The matcher will return A12s2 first, then it will return 34A5.
-
-# Rules To Implement
-
-A - "^\\d+$". This RegEx will match any Integer number.<br/>
-- 5449 is a match.
-- 45.5 is not a match because it has '.'.
-- a448 is not a match because it has 'a'.
-	
-B - "^\\d+\[.]\\d+$". This RegEx will match any number that starts with 1+ numbers followed by '.' followed by and ends by 1+ numbers and must end with a number.<br/>
-- 215.565 is a match.
-- 0.25 is a match.
-- .25 is not a match because it does not start with a number.
-- 25\. is not a match because it does not end with a number.
-
-C - "^\[ \[a-zA-Z] | \_ ] \[ \[a-zA-Z] | \\d| \_ ]*$". This RegEx will match a vaild identifier which is any word that start with '\_' or alphabetical character followed by 0+ alphanumerical characters or '\_'. <br/>
-- _12 is a match.<br/>
-- _A23A2____54 is a match.
-- 1_asdj21 is not a match because it does not start with '\_' or alphabetical character. 
-- _qas@ is not a match because it contains '@' which is not alphanumerical nor '\_'.
 
 
 # Implementation
