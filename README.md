@@ -77,7 +77,6 @@ For example, suppose I have main.c that I want to test its coverage.
 
 main.c:
 <pre>
-#include <stdio.h\>
 int main (void)
 {
   int i;
@@ -113,7 +112,22 @@ Creating main.c.gcov
 
 The `gcov` command produces an annotated version of the original source file, with the file extension ‘.gcov’, containing counts of the number of times each line was executed:
 
-
+<pre>
+ int  main (void)
+        {
+     1    int i;
+    10    for (i = 1; i < 10; i++)
+            {
+     9        if (i % 3 == 0)
+     3          printf ("%d is divisible by 3\n", i);
+     9        if (i % 11 == 0)
+######          printf ("%d is divisible by 11\n", i);
+     9      }
+     1    return 0;
+     1  }
+</pre>
+<br/>
+The line counts can be seen in the first column of the output. Lines which were not executed are marked with hashes ‘######’. 
 
 # Implementation
 In this exercise you will implement three functions, for three different regex formulas (A,B, and C from the Rules To Implement). IsInteger(), IsDouble(), and IsValidIdentifier().
