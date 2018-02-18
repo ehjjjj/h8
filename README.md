@@ -131,10 +131,10 @@ The line counts can be seen in the first column of the output. Lines which were 
 # Implementation
 In this assignment you will implement four functions:
 
-1. `createVID()` - This function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The general Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
+1- `createVID()` - This function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The general Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
 
 For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. Then the outputs (separated by comma) of this function:
-a, b, C, D, \_, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., \_a,\_b,\_C,\_D,\_\_,\_0,\_1
+`a, b, C, D, \_, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., \_a,\_b,\_C,\_D,\_\_,\_0,\_1`
 
 
 
