@@ -14,7 +14,7 @@ More about RegEx : https://www.tutorialspoint.com/java/java_regular_expressions.
 * Test the coverage of your program using gcov command.
 
 ## SORT command
-- Command sort which is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The sort command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default sort command will sort lines alphabetically.
+Command sort which is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The sort command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default sort command will sort lines alphabetically.
 
 For example, suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
@@ -43,7 +43,7 @@ Every standard process in Unix has at least three file descriptors:<br/>
 2\- Standard input  (STDIN),  which is the place it gets its data from (i.e keyboard).<br/>
 3\- Standard error  (STDERR), which is the place where errors and sometimes other out-of-band data goes.<br/><br/>
 
-- A Unix pipe (|) connects the STDOUT file descriptor of the first process to the STDIN of the second. So, when the first process writes to its STDOUT, that output can be immediately read (from STDIN) by the second process. In other words, the output of the first process will be sent as an input to the second process.
+A Unix pipe (|) connects the STDOUT file descriptor of the first process to the STDIN of the second. So, when the first process writes to its STDOUT, that output can be immediately read (from STDIN) by the second process. In other words, the output of the first process will be sent as an input to the second process.
 
 For example, suppose Desktop has four files pa08.c cars.txt toDo.txt assignment.md
 
