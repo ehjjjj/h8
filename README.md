@@ -28,11 +28,11 @@ Every standard process in Unix has at least three file descriptors:<br/>
 For example, 
 Suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
-<pre-wrap>
+<pre>
 asdas
 asdasd
 asd
-</pre-wrap>
+</pre>
 
 
 
