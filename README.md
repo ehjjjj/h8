@@ -3,9 +3,8 @@
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
-In this assignment you will deepen your understanding of recursion and regular expressions(RegEx). RegEx is used mainly for pattern-matching, parsing, and filtering. Most importantly it is used by compilers such as gcc (C compiler) to translate the high level language to machine language. https://www.tutorialspoint.com/compiler_design/compiler_design_lexical_analysis.htm
+In this assignment you will deepen your understanding of recursion and regular expressions(RegEx). You will be introduced to Pipe(|) and sort linux commands. Also, you will use gcov to analyze your code.
 
-More about RegEx : https://www.tutorialspoint.com/java/java_regular_expressions.htm
 
 
 # Learning Goals
@@ -130,10 +129,13 @@ The `gcov` command produces an annotated version of the original source file, wi
 The line counts can be seen in the first column of the output. Lines which were not executed are marked with hashes ‘######’. 
 
 # Implementation
-In this exercise you will implement three functions, for three different regex formulas (A,B, and C from the Rules To Implement). IsInteger(), IsDouble(), and IsValidIdentifier().
+In this assignment you will implement four functions:
+
+1. `createVID()` - This function will generate all possible regular expressions matching for a valid identifier. The Regex of valid identifier is `[a-zA-Z]`
 
 
-1. `IsInteger()` - This function will return true if the passed string is an integer and false otherwise.
+
+
 2. `IsDouble()` - This function will return true if the passed string is a double and false otherwise.
 3. `IsValidIdentifier()` - This function will return true if the passed string is a vaild identifier and false otherwise.
 4. `main()` - in the main file you will read the test file which has 'n' number of strings, and you will print on a file for each of the strings in the file 'Integer', 'Double', 'Identifier', or 'None' if the string does not match any of the rules. 
