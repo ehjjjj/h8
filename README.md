@@ -18,7 +18,7 @@ Command sort which is a  linux command for sorting lines of text files. It suppo
 
 For example, suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
-The following command "cat" will print out cars.txt content on the terminal screen.
+The following command `cat` will print out cars.txt content on the terminal screen.
 <pre>
 user@bash:~$ cat cars.txt
 Ford
@@ -27,7 +27,7 @@ Dodge
 Chrysler
 Hyundai
 </pre>
-The sort command will print out cars.txt content on the terminal screen alphabetically ordered.
+The `sort` command will print out cars.txt content on the terminal screen alphabetically ordered.
 <pre>
 user@bash:~$ sort cars.txt
 Chrysler
@@ -47,13 +47,13 @@ A Unix pipe (|) connects the STDOUT file descriptor of the first process to the 
 
 For example, suppose Desktop has four files pa08.c cars.txt toDo.txt assignment.md
 
-The ls command will list all the files in the Desktop directory
+The `ls` command will list all the files in the Desktop directory
 <pre>
 user@bash:~/Desktop$ ls 
 pa08.c cars.txt toDo.txt assignment.md
 </pre>
 
-The sort in the following command will take the output of ls command as input and sort it alphabetically.
+The `sort` in the following command will take the output of `ls` command as input and sort it alphabetically.
 <pre>
 user@bash:~/Desktop$ ls | sort
 assignment.md
