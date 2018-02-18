@@ -110,6 +110,7 @@ $ gcov main.c
 Creating main.c.gcov
 </pre>
 <br/>
+
 The `gcov` command produces an annotated version of the original source file, with the file extension ‘.gcov’, containing counts of the number of times each line was executed:
 
 
