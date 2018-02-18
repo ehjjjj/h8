@@ -131,7 +131,7 @@ The line counts can be seen in the first column of the output. Lines which were 
 # Implementation
 In this assignment you will implement four functions:
 
-1. `createVID()` - This function will generate all possible regular expressions matching for a valid identifier. The Regex of valid identifier is `[a-zA-Z]`
+1. `createVID()` - This function will generate all possible regular expressions matching for a valid identifier. The Regex of valid identifier is `\"^\[ \[a-zA-Z\] | \_ \] \[ \[a-zA-Z\] | \d| \_ ]*$".`
 
 
 
