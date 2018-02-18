@@ -69,7 +69,7 @@ gcov is a test coverage program. Use it in concert with GCC to analyze your prog
 Profiling tools help you analyze your code’s performance. Using a profiler such as gcov, you can find out some basic performance statistics, such as:<br/>
 1-how often each line of code executes.<br/>
 2-what lines of code are actually executed.<br/>
-3-how much computing time each section of code uses.<br/><br/>
+3-how much computing time each section of code uses.<br/>
 
 Once you know these things about how your code works when compiled, you can look at each module to see which modules should be optimized. gcov helps you determine where to work on optimization.
 
@@ -93,7 +93,7 @@ int main (void)
 </pre>
 
 To enable coverage testing the program must be compiled with the following options:<br/>
-`$ gcc -Wall -fprofile-arcs -ftest-coverage cov.c`<br/>
+`$ gcc -Wall -fprofile-arcs -ftest-coverage main.c`<br/>
 
 The option `-ftest-coverage` adds instructions for counting the number of times individual lines are executed, while `-fprofile-arcs` incorporates instrumentation code for each branch of the program. Branch instrumentation records how frequently different paths are taken through ‘if’ statements and other conditionals. The executable must then be run to create the coverage data:
 <pre>
@@ -103,6 +103,14 @@ $ ./a.out
 9 is divisible by 3
 </pre>
 
+The data from the run is written to several files with the extensions ‘.gcov’ ‘.gcda’ and ‘.gcno’ respectively in the current directory. This data can be analyzed using the gcov command and the name of a source file:
+<pre>
+$ gcov main.c 
+ 88.89% of 9 source lines executed in file main.c
+Creating main.c.gcov
+</pre>
+<br/>
+The `gcov` command produces an annotated version of the original source file, with the file extension ‘.gcov’, containing counts of the number of times each line was executed:
 
 
 
