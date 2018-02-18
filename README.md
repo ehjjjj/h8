@@ -151,26 +151,16 @@ For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. 
 
 # Testing your code
 Following are the files we provide:
-1. `pe07.c` 
-2. `pe07.h` 
+1. `pa08.c` 
+2. `pa08.h` 
 3. `main.c`
-4. `test.txt` - This file has n strings to match.
-
-`NOTE : Each line in any test file is a single string`<br/> 
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
 ./pe07 testAll.txt <br/>
 Match all strings in test.txt with all rules. Print "Integer".'Double', 'Identifier', or 'None' if the string does not match any of the rules. Expected output for this command in expOutAll.txt
 
-./pe07 testInt.txt -I <br/>
-"-I" To match all strings in test.txt with Integer rule. If it is integer, print "Integer". Otherwise,print "Not integer". Expected output for this command in expOutInt.txt
 
-./pe07 testDbl.txt -D <br/>
-"-D" To match all strings in test.txt with Double rule. If it is double, print "Double". Otherwise,print "Not double". Expected output for this command in expOutDbl.txt
-
-./pe07 testVID.txt -VID <br/>
-"-VID" To match all strings in test.txt with Vaild Identifier rule. If it is Identifier, print "Identifier". Otherwise, print "Not identifier". Expected output for this command in expOutVID.txt
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
