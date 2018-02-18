@@ -13,7 +13,7 @@ In this assignment you will deepen your understanding of recursion and regular e
 * Test the coverage of your program using gcov.
 
 ## SORT command
-`sort` is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The `sort` command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default sort command will sort lines alphabetically.
+`sort` is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The `sort` command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default `sort` command will sort lines alphabetically.
 
 For example, suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
@@ -140,9 +140,11 @@ For example if DS='0', DE='1', and length=4. Then the outputs (separated by comm
 
 For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. Then the outputs (separated by comma) of this function:<br/>
 `a, b, C, D, _, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., _a,_b,_C,_D,__,_0,_1`
+<br/><br/>
 
 
-
+`setVariablesDouble` - This function will set the DS and DE boundaries for createDouble() function. 
+`setVariablesVID` - This function will set LCS, LCE, UCS, UCE, DS, and DE boundaries for createVID() function.
 
 
 
