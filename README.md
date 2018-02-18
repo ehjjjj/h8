@@ -13,7 +13,7 @@ In this assignment you will deepen your understanding of recursion and regular e
 * Test the coverage of your program using gcov.
 
 ## SORT command
-Command sort which is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The sort command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default sort command will sort lines alphabetically.
+`sort` is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The `sort` command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default sort command will sort lines alphabetically.
 
 For example, suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
