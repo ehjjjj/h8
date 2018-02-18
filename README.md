@@ -28,10 +28,23 @@ Every standard process in Unix has at least three file descriptors:<br/>
 For example, 
 Suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
+The following command "cat" will print out cars.txt content on the terminal screen.
 <pre>
-asdas
-asdasd
-asd
+user@bash: cat cars.txt
+Ford
+Mercedes
+Dodge 
+Chrysler
+Hyundai
+</pre>
+The sort command will print out cars.txt content on the terminal screen alphabetically ordered.
+<pre>
+user@bash: sort cars.txt
+Chrysler
+Dodge
+Ford
+Hyundai
+Mercedes
 </pre>
 
 
