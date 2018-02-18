@@ -143,7 +143,7 @@ For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. 
 <br/><br/>
 
 
-`setVariablesDouble` - This function will set the DS and DE boundaries for createDouble() function. <br/>
+`setVariablesDouble` - This function will set the DS and DE boundaries for createDouble() function. <br/><br/>
 `setVariablesVID` - This function will set LCS, LCE, UCS, UCE, DS, and DE boundaries for createVID() function.
 
 
