@@ -9,22 +9,21 @@ More about RegEx : https://www.tutorialspoint.com/java/java_regular_expressions.
 
 
 # Learning Goals
-* Use recursion to solve complex problems by dividing the problem into smaller problems.
-* Understanding regular expressions.
-* The concept of pipe (|) and the command sort.
+* Use recursion to solve complex problems.
+* Understanding the concept of pipe (|) and the command sort.
 * Test the coverage of your program using gcov command.
 
 
-## Some of regular expression metacharacter syntax 
-|    Pattern    |               Description                              |  
-| ------------- | ------------------------------------------------------ |
-|       ^       | Match the beginning of the string                      | 
-|       $       | Match the end of the string                            |
-|  \[a-zA-Z]    | Match English alphabet charachter                      |
-|      \d	      | Match the digits                                       |
-|      re*	    | Match 0 or more occurrences of the preceding expression|
-|      re+	    | Match 1 or more occurrences of the preceding expression                 |
-| \[re1\|re2]    | Match either expression re1 or re2                     |
+## PIPE(|) and SORT command
+
+Every standard process in Unix has at least three file descriptors:<br/>
+⋅⋅* Standard output (STDOUT), which is the place where the process prints its data (i.e terminal screen or specific file).
+⋅⋅* Standard input  (STDIN),  which is the place it gets its data from (i.e keyboard).
+⋅⋅* Standard error  (STDERR), which is the place where errors and sometimes other out-of-band data goes.<br/><br/>
+
+A Unix pipe connects the STDOUT (standard output) file descriptor of the first process to the STDIN (standard input) of the second. What happens then is that when the first process writes to its STDOUT, that output can be immediately read (from STDIN) by the second process. In other words, the output of the first process will be sent as an input to the second process.
+
+Using multiple pipes is no different than using a single pipe. Each pipe is independent, and simply links the STDOUT and STDIN of the adjacent processes.
 
 ## Examples
 `NOTE : The regular expression matches as long as possible`<br/> 
