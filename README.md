@@ -96,11 +96,12 @@ To enable coverage testing the program must be compiled with the following optio
 `$ gcc -Wall -fprofile-arcs -ftest-coverage cov.c`<br/>
 
 The option `-ftest-coverage` adds instructions for counting the number of times individual lines are executed, while `-fprofile-arcs` incorporates instrumentation code for each branch of the program. Branch instrumentation records how frequently different paths are taken through ‘if’ statements and other conditionals. The executable must then be run to create the coverage data:
-`$ ./a.out 
+<pre>
+$ ./a.out 
 3 is divisible by 3
 6 is divisible by 3
-9 is divisible by 3`
-
+9 is divisible by 3
+</pre>
 
 
 
