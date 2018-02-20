@@ -146,7 +146,9 @@ For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. 
 `setVariablesDouble` - This function will set the DS and DE boundaries for createDouble() function. <br/><br/>
 `setVariablesVID` - This function will set LCS, LCE, UCS, UCE, DS, and DE boundaries for createVID() function.
 
+`Note: DS and DE can take values from '0' to '9', but DS<=DE. LCS and LCE can take values from 'a' to 'z', but LCS<=LCE. UCS and UCE can take values from 'A' to 'Z', but UCS<=UCE.`
 
+`Length Note: the minimum length of double is 3, while the minimum length of identifier is 1.`
 
 
 # Testing your code
@@ -157,23 +159,32 @@ Following are the files we provide:
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-./pe07 testAll.txt <br/>
-Match all strings in test.txt with all rules. Print "Integer".'Double', 'Identifier', or 'None' if the string does not match any of the rules. Expected output for this command in expOutAll.txt
+./pa08 -VID a b C D 1 3 2 > outVID.txt
+Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outVID.txt
 
+./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt
+Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt
+
+./pa08 -D 0 2 3
+Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outDouble.txt
+
+./pa08 -D 0 2 3 | sort
+Sort Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outSortedDouble.txt
 
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
 
 You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
-* `pe07.c` - This file should have `IsInteger()`, `IsDouble()`, and `IsValidIdentifier()`. functions implemented.
+* `pa08.c` - This file should have `createDouble()`, `createVID()`, `setVariablesDouble()` , and `setVariablesVID`. functions implemented.
 * `main.c` - This file should have `main()` function implemented.<br/>
-* `cases.txt` - This file has at least 50 lines as a test input that you have to create.
-* `OutCases.txt` - This file has the corresponding output for your cases. By running the following command <br>  `./pe07 cases.txt`
+* `Makefile` - This file should have 10 different test cases commands (50% sorted, 50% unsorted), and test coverage command at the end. The output of each command should be in file named test_case_name.txt, i.e if the test case name is testVID then the filename will be testVID.txt 
+
+`Note: There is a 15% penalty of your final grade, if you do not submit a Makefile`
 
 Type the following command to zip your file.
 ```bash
-	zip pe07.zip pe07.c main.c cases.txt OutCases.txt
+	zip pa08.zip pa08.c main.c Makefile
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
@@ -211,11 +222,8 @@ works." If your program misses a semicolon and cannot compile, you
 will receive zero.  Your score depends on what is submitted, nothing
 else.
 
-Your code will be tested as following : <br/>
-1- 40 test cases using ./pe07 testAll.txt command line. 1 point for each test case.<br/>
-2- 15 test cases ./pe07 testInt.txt -I/-D/-VID  each, sums up to 45 cases. 1 point for each test case.<br/>
-3- 5 test cases for the main.c and Makefile. 1 point for each test case.<br/>
-4- If you do not submit a test input, you will lose 10 points. If your expected output is wrong, you will lose at most 5 points.<br/>
+
+
 **All Test cases will be released later.
 
 
