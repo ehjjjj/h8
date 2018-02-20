@@ -171,6 +171,12 @@ Print out all possible identifers with max length 3, DS=0, DE=2. The Expected ou
 ./pa08 -D 0 2 3 | sort > outSortedDouble.txt<br/>
 Sort Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outSortedDouble.txt<br/>
 
+./pa08 -D 4 9 5 > outDouble2.txt<br/>
+Print out all possible identifers with max length 5, DS=4, DE=9. The Expected output for this case is in outDouble2.txt<br/>
+
+./pa08 -D 4 9 5 | sort > outSortedDouble2.txt<br/>
+Print out all possible identifers with max length 5, DS=4, DE=9. The Expected output for this case is in outSortedDouble2.txt<br/>
+
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
