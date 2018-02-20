@@ -128,8 +128,8 @@ The `gcov` command produces an annotated version of the original source file, wi
 <br/>
 The line counts can be seen in the first column of the output. Lines which were not executed are marked with hashes ‘######’. 
 
-# TASK
-In this assignment you will implement a function that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
+# TO DO
+In this assignment you will implement a function `createDouble()` that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
 
 For example, the following command will print out all possible double with DS='0', DE='1', and max length of 4. Outputs (separated by comma).
 ./pa08 -D 0 1 4 <br/>
@@ -137,14 +137,13 @@ For example, the following command will print out all possible double with DS='0
 <br/><br/>
 
 
-<strong> Bonus function to implement (Optional) </strong>
-the bonus function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
+<strong> Bonus function to implement (Optional) </strong> <br/>
+The bonus function `createVID` will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
 
 For example, the following command will print out all possible identifers with LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and max length of 2. Outputs (separated by comma):<br/>
 ./pa08 -VID a b C D 0 1 2
 `a, b, C, D, _, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., _a,_b,_C,_D,__,_0,_1`
 <br/><br/>
-
 
 
 `Note: DS and DE can take values from '0' to '9', but DS<=DE. LCS and LCE can take values from 'a' to 'z', but LCS<=LCE. UCS and UCE can take values from 'A' to 'Z', but UCS<=UCE.`
