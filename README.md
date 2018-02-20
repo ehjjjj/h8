@@ -1,6 +1,6 @@
 # HW8. Recursion (Regular Expression) Assignment
 ## This is an Assignment.
-say |[b Dark White on Bright Blue |* Negative
+say |\[b Dark White on Bright Blue |* Negative
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
