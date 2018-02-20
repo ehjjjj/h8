@@ -185,7 +185,7 @@ Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
 
 You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
-* `pa08.c` - This file should have `createDouble()`, `createVID()`, `setVariablesDouble()` , and `setVariablesVID`. functions implemented.
+* `pa08.c` - This file should have `createDouble()` and `createVID()` functions implemented.
 * `main.c` - This file should have `main()` function implemented.<br/>
 * `Makefile` - This file should have 10 different test cases commands (All Sorted i.e | sort), and test coverage command at the end. The output of each command should be in file named test_case_name.txt, i.e if the test case name is testVID then the filename will be testVID.txt 
 
