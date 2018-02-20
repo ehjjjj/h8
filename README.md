@@ -1,6 +1,5 @@
 # HW8. Recursion (Regular Expression) Assignment
 ## This is an Assignment.
-say |\[b Dark White on Bright Blue |* Negative
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
@@ -178,6 +177,7 @@ Print out all possible identifers with max length 5, DS=4, DE=9. The Expected ou
 ./pa08 -D 4 9 5 | sort > outSortedDouble2.txt<br/>
 Print out all possible identifers with max length 5, DS=4, DE=9. The Expected output for this case is in outSortedDouble2.txt<br/>
 
+`Note: Since your code may print the output in a different order; you should only compare your sorted output with the sorted expected output to verify the correctness of your output`
 
 # Submitting Your code
 ** This is a programming exercise, so you would have to submit the code on Blackboard.**
@@ -185,7 +185,7 @@ Print out all possible identifers with max length 5, DS=4, DE=9. The Expected ou
 You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
 * `pa08.c` - This file should have `createDouble()`, `createVID()`, `setVariablesDouble()` , and `setVariablesVID`. functions implemented.
 * `main.c` - This file should have `main()` function implemented.<br/>
-* `Makefile` - This file should have 10 different test cases commands (50% sorted, 50% unsorted), and test coverage command at the end. The output of each command should be in file named test_case_name.txt, i.e if the test case name is testVID then the filename will be testVID.txt 
+* `Makefile` - This file should have 10 different test cases commands (All Sorted i.e | sort), and test coverage command at the end. The output of each command should be in file named test_case_name.txt, i.e if the test case name is testVID then the filename will be testVID.txt 
 
 `Note: There is a 15% penalty of your final grade, if you do not submit a Makefile`
 
