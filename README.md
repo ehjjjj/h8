@@ -165,10 +165,10 @@ Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D,
 ./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt<br/>
 Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt<br/>
 
-./pa08 -D 0 2 3<br/>
+./pa08 -D 0 2 3 > outDouble.txt<br/>
 Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outDouble.txt<br/>
 
-./pa08 -D 0 2 3 | sort<br/>
+./pa08 -D 0 2 3 | sort > outSortedDouble.txt<br/>
 Sort Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outSortedDouble.txt<br/>
 
 
