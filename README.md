@@ -131,18 +131,17 @@ The line counts can be seen in the first column of the output. Lines which were 
 # TASK
 In this assignment you will implement a function that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
 
-For example if DS='0', DE='1', and length=4. Then the outputs (separated by comma) of this function:<br/>
+For example, the following command will print out all possible double with DS='0', DE='1', and max length of 4. Outputs (separated by comma).
+./pa08 -D 0 1 4 <br/>
 `0.0, 0.1, 1.0, 1.1, 0.00, 0.01, 0.10, 0.11, 1.00, 1.01, 1.10, 1.11, 00.0, 00.1, 01.0, 01.1, 10.0, 10.1, 11.0, 11.1`
 <br/><br/>
-
-For example, the following code will print out all possible identifers with max length 3, DS=0, DE=2.<br/>
-./pa08 -D 0 2 3 > outDouble.txt<br/>
 
 
 <strong> Bonus function to implement (Optional) </strong>
 the bonus function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
 
-For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. Then the outputs (separated by comma) of this function:<br/>
+For example, the following command will print out all possible identifers with LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and max length of 2. Outputs (separated by comma):<br/>
+./pa08 -VID a b C D 0 1 2
 `a, b, C, D, _, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., _a,_b,_C,_D,__,_0,_1`
 <br/><br/>
 
