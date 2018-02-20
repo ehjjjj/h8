@@ -132,7 +132,7 @@ The line counts can be seen in the first column of the output. Lines which were 
 In this assignment you will implement a function `createDouble()` that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
 
 For example, the following command will print out all possible double with DS='0', DE='1', and max length of 4. <br/>
-`./pa08 -D 0 1 4` <br/>
+`./pa08 -D 0 1 4` <br/> <br/>
 Outputs (separated by comma): <br/>
 `0.0, 0.1, 1.0, 1.1, 0.00, 0.01, 0.10, 0.11, 1.00, 1.01, 1.10, 1.11, 00.0, 00.1, 01.0, 01.1, 10.0, 10.1, 11.0, 11.1`
 <br/><br/>
@@ -143,7 +143,7 @@ The bonus function `createVID` will generate all possible matchings for a valid 
 
 For example, the following command will print out all possible identifers with LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and max length of 2. <br/>
 `./pa08 -VID a b C D 0 1 2`<br/>
-Outputs (separated by comma):<br>
+Outputs (separated by comma):<br/><br/>
 `a, b, C, D, _, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., _a,_b,_C,_D,__,_0,_1`
 <br/><br/>
 
