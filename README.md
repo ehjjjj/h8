@@ -128,23 +128,25 @@ The `gcov` command produces an annotated version of the original source file, wi
 <br/>
 The line counts can be seen in the first column of the output. Lines which were not executed are marked with hashes ‘######’. 
 
-# Implementation
-In this assignment you will implement four functions:
-
-`createDouble()` - This function will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
+# TASK
+In this assignment you will implement a function that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
 
 For example if DS='0', DE='1', and length=4. Then the outputs (separated by comma) of this function:<br/>
 `0.0, 0.1, 1.0, 1.1, 0.00, 0.01, 0.10, 0.11, 1.00, 1.01, 1.10, 1.11, 00.0, 00.1, 01.0, 01.1, 10.0, 10.1, 11.0, 11.1`
 <br/><br/>
-`createVID()` - This function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
+
+For example, the following code will print out all possible identifers with max length 3, DS=0, DE=2.<br/>
+./pa08 -D 0 2 3 > outDouble.txt<br/>
+
+
+<strong> Bonus function to implement (Optional) </strong>
+the bonus function will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
 
 For example if LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and length=2. Then the outputs (separated by comma) of this function:<br/>
 `a, b, C, D, _, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., _a,_b,_C,_D,__,_0,_1`
 <br/><br/>
 
 
-`setVariablesDouble` - This function will set the DS and DE boundaries for createDouble() function. <br/><br/>
-`setVariablesVID` - This function will set LCS, LCE, UCS, UCE, DS, and DE boundaries for createVID() function.
 
 `Note: DS and DE can take values from '0' to '9', but DS<=DE. LCS and LCE can take values from 'a' to 'z', but LCS<=LCE. UCS and UCE can take values from 'A' to 'Z', but UCS<=UCE.`
 
@@ -159,12 +161,6 @@ Following are the files we provide:
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-./pa08 -VID a b C D 1 3 2 > outVID.txt<br/>
-Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outVID.txt<br/>
-
-./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt<br/>
-Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt<br/>
-
 ./pa08 -D 0 2 3 > outDouble.txt<br/>
 Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outDouble.txt<br/>
 
@@ -176,6 +172,12 @@ Print out all possible identifers with max length 5, DS=4, DE=9. The Expected ou
 
 ./pa08 -D 4 9 5 | sort > outSortedDouble2.txt<br/>
 Print out all possible identifers with max length 5, DS=4, DE=9. The Expected output for this case is in outSortedDouble2.txt<br/>
+
+./pa08 -VID a b C D 1 3 2 > outVID.txt<br/>
+Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outVID.txt<br/>
+
+./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt<br/>
+Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt<br/>
 
 `Note: Since your code may print the output in a different order; you should only compare your sorted output with the sorted expected output to verify the correctness of your output`
 
