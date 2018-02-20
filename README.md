@@ -1,6 +1,6 @@
 # HW8. Recursion (Regular Expression) Assignment
 ## This is an Assignment.
-- !\[#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 <strong>Please read the entire file before you ask any question.</strong><br>
 
 In this assignment you will deepen your understanding of recursion and regular expressions(RegEx). You will be introduced to Pipe(|) and sort linux commands. Also, you will use gcov to analyze your code.
