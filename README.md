@@ -1,8 +1,7 @@
 # HW8. Recursion (Regular Expression) Assignment
 ## This is an Assignment.
-```diff
-+Please read the entire file before you ask any question
-```
+say |[b Dark White on Bright Blue |* Negative
+
 <strong>Please read the entire file before you ask any question.</strong><br>
 
 In this assignment you will deepen your understanding of recursion and regular expressions(RegEx). You will be introduced to Pipe(|) and sort linux commands. Also, you will use gcov to analyze your code.
