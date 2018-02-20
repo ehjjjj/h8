@@ -1,7 +1,7 @@
 # HW8. Recursion (Regular Expression) Assignment
 ## This is an Assignment.
 ```diff
-+<strong>Please read the entire file before you ask any question.</strong> in green
++Please read the entire file before you ask any question in green
 - this will be highlighted in red
 ```
 <strong>Please read the entire file before you ask any question.</strong><br>
