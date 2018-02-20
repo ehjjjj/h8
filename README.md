@@ -159,17 +159,17 @@ Following are the files we provide:
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-./pa08 -VID a b C D 1 3 2 > outVID.txt
-Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outVID.txt
+./pa08 -VID a b C D 1 3 2 > outVID.txt<br/>
+Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outVID.txt<br/>
 
-./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt
-Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt
+./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt<br/>
+Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt<br/>
 
-./pa08 -D 0 2 3
-Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outDouble.txt
+./pa08 -D 0 2 3<br/>
+Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outDouble.txt<br/>
 
-./pa08 -D 0 2 3 | sort
-Sort Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outSortedDouble.txt
+./pa08 -D 0 2 3 | sort<br/>
+Sort Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outSortedDouble.txt<br/>
 
 
 # Submitting Your code
