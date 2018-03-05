@@ -19,7 +19,7 @@ There are n elements in a array to be counted out (one element per step). The co
 
 `NOTE: the element you start counting from will no be included in counting`
 
-For example, let assume that the array size(n) is 6, and k=2. `ruled out numbers will be marked by (X)`
+For example, let assume that the array size(n) is 6, and k=2. <br>`Note: ruled out numbers will be marked by (X)`
 <pre>
 0 1 2 3 4 5 // at the begining, start from index=0, counting k, you will stop at 2, then 2 will be out.
 0 1 X 3 4 5 // after counting out a number, the index=3, counting k, you will stop at 5, the 5 will be out.
@@ -31,7 +31,7 @@ X X X X 4 X // 4 wins.
 
 `Note: k can be greater than n`
 
-For example, let assume that the array size(n) is 6, and k=7. `ruled out numbers will be marked by (X)`
+For example, let assume that the array size(n) is 6, and k=7.<br> `Note:ruled out numbers will be marked by (X)`
 <pre>
 0 1 2 3 4 5 // index=0, counting k, you will stop at 2, then 2 will be out.
 0 1 X 3 4 5 // index=3, counting k, you will stop at 0, the 0 will be out.
