@@ -47,7 +47,7 @@ X 1 X X X X // 1 wins.
 <strong>josephus()</strong> </br>
 In this function you will implement the solution for Josephus problem. To do so, you will be using a boolean array that you have to initialize to 1's (true) beforehand. Based on the value of k, the values of the array will start flipping to 0's (false). The function should stop iterating when the array has only one value 1 (true). </br>
 
-<strong>print()</strong> 
+<strong>print()</strong>  </br>
 This function will print the boolean array with length(len) in the following format. <br>
 * Print the index if its corresponding value in the array is true, Otherwise print X instead. For instance, If the array is of length
    4, and it has values of true(index=0),false(index=1),true(index=2),false(index=3). // the output should look like this: `0,X,2,X`  </br>
