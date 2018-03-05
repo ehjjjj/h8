@@ -1,5 +1,5 @@
 # HW10. Josephus problem using array.
-## This is an Exercise, and it related to HW11 and HW12.
+## This is an Exercise, and it is related to HW11 and HW12.
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
@@ -12,76 +12,41 @@ In this Exercise you will solve a theoretical problem related to a certain count
 * Deepen your understanding of the use of loops.
 
 ## Josephus problem
+ Josephus Problem (or Josephus permutation) is a theoretical problem. Following is the problem statement:
+ 
+There are n numbers in a array to be counted out (one per step). The counting out begins at index zero and proceeds through the array in a fixed direction. In each step, a certain number of numbers are skipped and the next number is ruled out. The elimination proceeds through the array (which is becoming smaller and smaller as numbers are counted out), until only the last number remains, who wins the game. Given the total number of numbers n and a number k which indicates that k-1 numbers are skipped and kth number is out.
+
+`NOTE: the number you start counting from will no be included in counting`
+
+For example, let assume that the array size(n) is 5, and k=2. `ruled out numbers will be marked by (X)`
+<pre>
+0 1 2 3 4 5 // at the begining, start from index 0, counting k, you will stop at 2, then 2 will be out.
+0 1 X 3 4 5 // after counting out a number, the n 
+
+
+
+</pre>
 
 
 
 
 # TO DO
-In this assignment you will implement a function `createDouble()` that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
-
-For example, the following command will print out all possible double with DS='0', DE='1', and max length of 4. <br/>
-`./pa08 -D 0 1 4` <br/> 
-Outputs (separated by comma): <br/>
-`0.0, 0.1, 1.0, 1.1, 0.00, 0.01, 0.10, 0.11, 1.00, 1.01, 1.10, 1.11, 00.0, 00.1, 01.0, 01.1, 10.0, 10.1, 11.0, 11.1`
-<br/><br/>
-
-
-<strong> Bonus function to implement (Optional) </strong> <br/>
-The bonus function `createVID` will generate all possible matchings for a valid identifier within a given length ,and alphabet and digit range. The Regex of valid identifier is `"^[ [a-zA-Z] | _ ] [ [a-zA-Z] | \d| _ ]*$"`. This function will generate all possible matchings for `"^[ [LCS-LCE]|[UCS-UCE] | _ ] [ [LCS-LCE]|[UCS-UCE] | [DS-DE]| _ ]*$"`. LCS and LCE are lower case start and end boundaries. UCS and UCE are upper case start and end boundaries. DS and DE are digit start and end boundaries.<br/>
-
-For example, the following command will print out all possible identifers with LCS='a', LCE='b', UCS='C',UCE='D', DS='0', DE='1', and max length of 2. <br/>
-`./pa08 -VID a b C D 0 1 2`<br/>
-Outputs (separated by comma):<br/>
-`a, b, C, D, _, aa, ab, aC, aD, a_, a0, a1, ba, bb, bC, bD, b_, b0,b1, ...., _a,_b,_C,_D,__,_0,_1`
-<br/><br/>
-
-
-`Note: DS and DE can take values from '0' to '9', but DS<=DE. LCS and LCE can take values from 'a' to 'z', but LCS<=LCE. UCS and UCE can take values from 'A' to 'Z', but UCS<=UCE.`
-
-`Length Note: the minimum length of double is 3, while the minimum length of identifier is 1.`
 
 
 # Testing your code
 Following are the files we provide:
-1. `pa08.c` 
-2. `pa08.h` 
+1. `pe10.c` 
+2. `pe10.h` 
 3. `main.c`
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-./pa08 -D 0 2 3 > outDouble.txt<br/>
-Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outDouble.txt<br/>
-
-./pa08 -D 0 2 3 | sort > outSortedDouble.txt<br/>
-Sort Print out all possible identifers with max length 3, DS=0, DE=2. The Expected output for this case is in outSortedDouble.txt<br/>
-
-./pa08 -D 4 9 5 > outDouble2.txt<br/>
-Print out all possible identifers with max length 5, DS=4, DE=9. The Expected output for this case is in outDouble2.txt<br/>
-
-./pa08 -D 4 9 5 | sort > outSortedDouble2.txt<br/>
-Print out all possible identifers with max length 5, DS=4, DE=9. The Expected output for this case is in outSortedDouble2.txt<br/>
-
-./pa08 -VID a b C D 1 3 2 > outVID.txt<br/>
-Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outVID.txt<br/>
-
-./pa08 -VID a b C D 1 3 2 | sort > outSortedVID.txt<br/>
-Sort and Print out all possible identifers with max length 2, LCS=a, LCE=b, UCS=C, UCE=D, DS=1, DE=3. The Expected output for this case is in outSortedVID.txt<br/>
-
-`Note: Since your code may print the output in a different order; you should only compare your sorted output with the sorted expected output to verify the correctness of your output`
-
-# Submitting Your code
-** This is a programming exercise, so you would have to submit the code on Blackboard.**
-
-You have to submit the following file in a <strong>zip</strong> folder on the blackboard:
-* `pa08.c` - This file should have `createDouble()` and `createVID()` functions implemented.
-* `main.c` - This file should have `main()` function implemented.<br/>
-* `Makefile` - This file should have 10 different test cases commands (All Sorted i.e | sort), and test coverage command at the end. The output of each command should be in file named test_case_name.txt, i.e if the test case name is testVID then the filename will be testVID.txt 
 
 `Note: There is a 15% penalty of your final grade, if you do not submit a Makefile`
 
 Type the following command to zip your file.
 ```bash
-	zip pa08.zip pa08.c main.c Makefile
+	zip pe10.zip pe10.c main.c Makefile
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
