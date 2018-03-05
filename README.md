@@ -51,9 +51,10 @@ In this function you will implement the solution for Josephus problem. To do so,
 This function will print the boolean array with length(len) in the following format: <br>
 * Print the index if its corresponding value in the array is true, Otherwise print X instead. For instance, If the array is of length
    4, and it has values of true(index=0),false(index=1),true(index=2),false(index=3). // the output should look like this: `0,X,2,X`  </br>
-* There should be no extra comma at the end nor at the beginning. For example, `,0,X,2,X` or `0,X,2,X,` formats are both wrong. Doing
-   so will get you zero for this function. So, please be careful.  </br>
+* There should be no extra comma at the end nor at the beginning. For example, `,0,X,2,X` or `0,X,2,X,` formats are both wrong. </br>
 * Make sure that there is a new line at the end of the output.
+
+`NOTE: Violating this format will get you zero for this function`
 
 # Testing your code
 Following are the files we provide:
