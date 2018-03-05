@@ -44,7 +44,12 @@ X 1 X X X X // 1 wins.
 
 
 # TO DO
+josephus(): In this function you will implement the solution for Josephus problem. To do so, you will be using a boolean array that you have to initialize to 1's (true) beforehand. Based on the value of k, the values of the array will start flipping to 0's (false). The function should stop iterating when the array has only one value 1 (true).
 
+print(): This function will print the boolean array with length(len) in the following format. <br>
+1- Print the index if its corresponding value in the array is true, Otherwise print X instead. For instance, If the array is of length 4, and it has values of true(index=0),false(index=1),true(index=2),false(index=3). // the output should look like this: `0,X,2,X` <br>
+2- There should be no extra comma at the end nor at the beginning. For example, `,0,X,2,X` or `0,X,2,X,` formats are both wrong. Doing so will get you zero for this function. So, please be careful. <br>
+3- Make sure that there is a new line at the end of the output.
 
 # Testing your code
 Following are the files we provide:
@@ -53,7 +58,6 @@ Following are the files we provide:
 3. `main.c`
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
-
 
 `Note: There is a 15% penalty of your final grade, if you do not submit a Makefile`
 
