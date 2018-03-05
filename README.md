@@ -5,8 +5,7 @@
 
 In this Exercise you will solve a theoretical problem related to a certain counting-out game (Josephus problem).
 https://www.youtube.com/watch?v=uCsD3ZGzMgE
-http://mathworld.wolfram.com/JosephusProblem.html
-
+ 
 
 # Learning Goals
 * Solve Josephus problem.
