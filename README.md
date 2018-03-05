@@ -40,7 +40,7 @@ X 1 X X 4 X // index=1, next element to be out is 4.
 X 1 X X X X // 1 wins.
 </pre>
 
-`Note: n and k both have to be greater than one.
+`Note: n and k both have to be greater than one.`
 
 
 # TO DO
