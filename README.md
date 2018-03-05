@@ -57,28 +57,36 @@ This function will print the boolean array with length(len) in the following for
 `NOTE: Violating this format will get you zero for this function`
 
 # Testing your code
-
-To test your code, we provide you with 6 different cases
-./pe10 10 3 1 > case1.txt
-./pe10 10 4 2 > case2.txt
-./pe10 8 5 3  > case3.txt
-./pe10 8 9 1  > case4.txt
-./pe10 41 3 1 > case5.txt
-./pe10 100 3 20 > case6.txt
-
-
-
-
-
-
 Following are the files we provide:
 1. `pe10.c` This file should have josephus() and print() functions implemented.
 2. `pe10.h` 
 3. `main.c`This file should have the main() function implemented.
 
+`NOTE:Please follow the printing format you find in the cases .txt files.`
+To test your code, we provide you with 6 different cases:<br>
+
+The following command should create a boolean array of length 10, k=3, p=1. The output of this command is in case1.txt
+`./pe10 10 3 1 > case1.txt`<br>
+
+The following command should create a boolean array of length 10, k=4, p=2. The output of this command is in case2.txt
+`./pe10 10 4 2 > case2.txt`<br>
+
+The following command should create a boolean array of length 8, k=5, p=3. The output of this command is in case3.txt
+`./pe10 8 5 3  > case3.txt`<br>
+
+The following command should create a boolean array of length 8, k=9, p=1. The output of this command is in case4.txt
+`./pe10 8 9 1  > case4.txt`<br>
+
+The following command should create a boolean array of length 41, k=3, p=1. The output of this command is in case5.txt
+`./pe10 41 3 1 > case5.txt`<br>
+
+The following command should create a boolean array of length 100, k=3, p=20. The output of this command is in case6.txt
+`./pe10 100 3 20 > case6.txt`<br>
+
+
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-`Note: There is a 15% penalty of your final grade, if you do not submit a Makefile`
+`Note: There is a 15% penalty of your final grade, if you do not submit a Makefile. Also, your makefile should create "pe10" output file. Your makefile will be test if it creates an output file with name "pe10". "pe10.o" or "main.o" are not acceptable as output file name`
 
 Type the following command to zip your file.
 ```bash
