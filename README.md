@@ -62,7 +62,7 @@ Following are the files we provide:
 2. `pe10.h` 
 3. `main.c`This file should have the main() function implemented.
 
-`NOTE:Please follow the printing format you find in the cases .txt files.`
+`NOTE:Please follow the printing format you find in the cases .txt files.`<br>
 To test your code, we provide you with 6 different cases:<br>
 
 The following command should create a boolean array of length 10, k=3, p=1. The output of this command is in case1.txt
