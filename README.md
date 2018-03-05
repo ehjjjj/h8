@@ -57,10 +57,24 @@ This function will print the boolean array with length(len) in the following for
 `NOTE: Violating this format will get you zero for this function`
 
 # Testing your code
+
+To test your code, we provide you with 6 different cases
+./pe10 10 3 1 > case1.txt
+./pe10 10 4 2 > case2.txt
+./pe10 8 5 3  > case3.txt
+./pe10 8 9 1  > case4.txt
+./pe10 41 3 1 > case5.txt
+./pe10 100 3 20 > case6.txt
+
+
+
+
+
+
 Following are the files we provide:
-1. `pe10.c` 
+1. `pe10.c` This file should have josephus() and print() functions implemented.
 2. `pe10.h` 
-3. `main.c`
+3. `main.c`This file should have the main() function implemented.
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
