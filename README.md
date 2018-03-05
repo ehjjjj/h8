@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=uCsD3ZGzMgE
 ## Josephus problem
  Josephus Problem (or Josephus permutation) is a theoretical problem. Following is the problem statement:
  
-There are n elements in a array to be counted out (one element per step). The counting out begins at index zero and proceeds through the array in a fixed direction. In each step, a certain number of elements are skipped and the next element is ruled out. The elimination proceeds through the array (which is becoming smaller and smaller as elements are counted out), until one last element remains (wins the game). Given the total number of elements n and a number k which indicates that k-1 elements are skipped and kth element is out.
+There are n elements in a array to be counted out (one element per step). The counting out begins at index=0 and proceeds through the array in a fixed direction. In each step, a certain number of elements are skipped and the next element is ruled out. The elimination proceeds through the array (which is becoming smaller and smaller as elements are counted out), until one last element remains (wins the game). Given the total number of elements n and a number k which indicates that k-1 elements are skipped and kth element is out.
 
 `NOTE: the element you start counting from will no be included in counting`
 
