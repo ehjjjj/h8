@@ -1,132 +1,20 @@
-# HW8. Recursion (Regular Expression) Assignment
-## This is an Assignment.
+# HW10. Josephus problem using array.
+## This is an Exercise, and it related to HW11 and HW12.
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
-In this assignment you will deepen your understanding of recursion and regular expressions(RegEx). You will be introduced to Pipe(|) and sort linux commands. Also, you will use gcov to analyze your code.
-
+In this Exercise you will solve a theoretical problem related to a certain counting-out game (Josephus problem).
 
 
 # Learning Goals
-* Use recursion to solve complex problems.
-* Understanding the concept of pipe (|) and the command sort.
-* Test the coverage of your program using gcov.
+* Solve Josephus problem.
+* Understand permutation.
+* Deepen your understanding of the use of loops.
 
-## SORT command
-`sort` is a  linux command for sorting lines of text files. It supports sorting alphabetically, in reverse order, by number, by month and can also remove duplicates. The `sort` command can also sort by items not at the beginning of the line, ignore case sensitivity and return whether a file is sorted or not. By default `sort` command will sort lines alphabetically.
+## Josephus problem
 
-For example, suppose a file exists with the following list of car brands that needs to be sorted in alphabetical order. The file is saved as cars.txt
 
-The following command `cat` will print out cars.txt content on the terminal screen.
-<pre>
-user@bash:~$ cat cars.txt
-Ford
-Mercedes
-Dodge 
-Chrysler
-Hyundai
-</pre>
-The `sort` command will print out cars.txt content on the terminal screen alphabetically ordered.
-<pre>
-user@bash:~$ sort cars.txt
-Chrysler
-Dodge
-Ford
-Hyundai
-Mercedes
-</pre>
 
-## PIPE(|)
-Every standard process in Unix has at least three file descriptors:<br/>
-1- Standard output (STDOUT), which is the place where the process prints its data (i.e terminal screen or specific file).<br/>
-2- Standard input  (STDIN),  which is the place it gets its data from (i.e keyboard).<br/>
-3- Standard error  (STDERR), which is the place where errors and sometimes other out-of-band data goes.<br/><br/>
-
-A Unix pipe (|) connects the STDOUT file descriptor of the first process to the STDIN of the second. So, when the first process writes to its STDOUT, that output can be immediately read (from STDIN) by the second process. In other words, the output of the first process will be sent as an input to the second process.
-
-For example, suppose Desktop has four files pa08.c cars.txt toDo.txt assignment.md
-
-The `ls` command will list all the files in the Desktop directory
-<pre>
-user@bash:~/Desktop$ ls 
-pa08.c cars.txt toDo.txt assignment.md
-</pre>
-
-The `sort` in the following command will take the output of `ls` command as input and sort it alphabetically.
-<pre>
-user@bash:~/Desktop$ ls | sort
-assignment.md
-cars.txt
-pa08.c
-toDo.txt
-</pre>
-
-## Test Coverage (GCOV)
-
-gcov is a test coverage program. Use it in concert with GCC to analyze your programs to help create more efficient, faster running code and to discover untested parts of your program. You can use gcov as a profiling tool to help discover where your optimization efforts will best affect your code. 
-
-Profiling tools help you analyze your code’s performance. Using a profiler such as gcov, you can find out some basic performance statistics, such as:<br/>
-1-how often each line of code executes.<br/>
-2-what lines of code are actually executed.<br/>
-3-how much computing time each section of code uses.<br/>
-
-Once you know these things about how your code works when compiled, you can look at each module to see which modules should be optimized. gcov helps you determine where to work on optimization.
-
-For example, suppose I have main.c that I want to test its coverage.
-
-main.c:
-<pre>
-int main (void)
-{
-  int i;
-  for (i = 1; i < 10; i++)
-    {
-      if (i % 3 == 0)
-        printf ("%d is divisible by 3\n", i);
-      if (i % 11 == 0)
-        printf ("%d is divisible by 11\n", i);
-    }
-  return 0;
-}
-</pre>
-
-To enable coverage testing the program must be compiled with the following options:<br/>
-`$ gcc -Wall -fprofile-arcs -ftest-coverage main.c`<br/>
-
-The option `-ftest-coverage` adds instructions for counting the number of times individual lines are executed, while `-fprofile-arcs` incorporates instrumentation code for each branch of the program. Branch instrumentation records how frequently different paths are taken through ‘if’ statements and other conditionals. The executable must then be run to create the coverage data:
-<pre>
-$ ./a.out 
-3 is divisible by 3
-6 is divisible by 3
-9 is divisible by 3
-</pre>
-
-The data from the run is written to several files with the extensions ‘.gcov’ ‘.gcda’ and ‘.gcno’ respectively in the current directory. This data can be analyzed using the gcov command and the name of a source file:
-<pre>
-$ gcov main.c 
- 88.89% of 9 source lines executed in file main.c
-Creating main.c.gcov
-</pre>
-<br/>
-
-The `gcov` command produces an annotated version of the original source file, with the file extension ‘.gcov’, containing counts of the number of times each line was executed:
-
-<pre>
- int  main (void)
-        {
-     1    int i;
-    10    for (i = 1; i < 10; i++)
-            {
-     9        if (i % 3 == 0)
-     3          printf ("%d is divisible by 3\n", i);
-     9        if (i % 11 == 0)
-######          printf ("%d is divisible by 11\n", i);
-     9      }
-     1    return 0;
-     1  }
-</pre>
-<br/>
-The line counts can be seen in the first column of the output. Lines which were not executed are marked with hashes ‘######’. 
 
 # TO DO
 In this assignment you will implement a function `createDouble()` that will generate all possible matchings for a double within a given length and digit range. The Regex of double is `"^\d+[.]\d+$"`. This function will generate all possible matchings for `"^[DS-DE]+[.][DS-DE]+$"`. DS and DE are digit start and end boundaries.<br/>
