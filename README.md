@@ -11,7 +11,7 @@ The command used for compiling is : </br>
 `gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DJOSEPHUS pe10.obj2 main.c pe10.c -o pe10`</br>
 Then run the following command:</br>
 `./pe10 10 2 1 > sptest.txt`</br>
-- The correct output of this case is in ptest, your answer in sptest.txt, you can `diff` to find the error if there is any.</br>
+- The correct output of this case is in `ptest`, your answer in `sptest.txt`, you can `diff` to find the error if there is any.</br>
 
 
 	
