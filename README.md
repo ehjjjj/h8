@@ -1,5 +1,5 @@
 # HW10 grading policy
-<strong> Read it to last line before sending any email </strong>
+<strong> Read it to last line before sending any email </strong> </br>
 `- If you did not submit a functional makefile (produce executable "output file" called pe10), you will lose 15% of your grade.` <br>
 `- If you did not submit main.c, you will get zero` <br>
 `- If you did not use the proper flags (i.e forgetting to use -Werror -Wvla) while compiling may lead to compile error. Regrade is not possible for such cases`
