@@ -1,9 +1,9 @@
 # HW10 grading policy
 
-`- If you did not submit a functional makefile (produce executable "output file" with name `pe10\`), you will lose 15% of your grade.` <br>
+`- If you did not submit a functional makefile (produce executable "output file" called pe10), you will lose 15% of your grade.` <br>
 `- If you did not submit main.c, you will get zero` <br>
-`- If you did not use the proper flags (i.e forgetting to use -Werror) while compiling may lead to compile error. Regrade is not possible for such cases`
-`- If you print new line in josephus() not in print as mentioned in the instruction this will lead to extra line for each print, you may lose points because of it`
+`- If you did not use the proper flags (i.e forgetting to use -Werror -Wvla) while compiling may lead to compile error. Regrade is not possible for such cases`
+`- If you print a new line in josephus() not in print as mentioned in the instruction this will lead to extra line for each print, you may lose points because of it`
 
 ## print() function (10 points)
 - To test your function we compiled your code with -DJOSEPHUS flag. Your print() function with our josephus() solution in pe10.obj2.</br>
