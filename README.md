@@ -6,12 +6,12 @@
 `- If you print new line in josephus() not in print as mentioned in the instruction this will lead to extra line for each print, you may lose points because of it`
 
 ## print() function (10 points)
-- To test your function we compiled your code with -DJOSEPHUS flag. Your print() function with our josephus() solution in pe10.obj2.
-The command used for compiling is : 
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DJOSEPHUS pe10.obj2 main.c pe10.c -o pe10`
-Then run the following command:
-`./pe10 10 2 1 > sptest.txt`
-- The correct output of this case is in ptest, your answer in sptest.txt, you can `diff` to find the error if there is any.
+- To test your function we compiled your code with -DJOSEPHUS flag. Your print() function with our josephus() solution in pe10.obj2.</br>
+The command used for compiling is : </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DJOSEPHUS pe10.obj2 main.c pe10.c -o pe10`</br>
+Then run the following command:</br>
+`./pe10 10 2 1 > sptest.txt`</br>
+- The correct output of this case is in ptest, your answer in sptest.txt, you can `diff` to find the error if there is any.</br>
 
 
 	
