@@ -6,6 +6,8 @@
 `- If you did not use the proper flags (i.e forgetting to use -Werror -Wvla) while compiling may lead to compile error. Regrade is not possible for such cases`
 `- If you print a new line in josephus() not in print as mentioned in the instruction this will lead to extra line for each print, you may lose points because of it`
 
+<br/><br/>
+
 
 <strong>Please copy the main.c and pe11.c you submitted to this directory</strong>
 
