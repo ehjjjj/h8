@@ -1,15 +1,17 @@
 
-# HW10 grading policy
+# HW11 grading policy
 <strong>  &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; \*\*\*ATTENTION : Read it to the last line before sending any email\*\*\* </strong> </br> <br>
 `- If you did not submit a functional makefile (produce executable "output file" called pe10), you will lose 15% of your grade.` <br>
 `- If you did not submit main.c, you will get zero` <br>
 `- If you did not use the proper flags (i.e forgetting to use -Werror -Wvla) while compiling may lead to compile error. Regrade is not possible for such cases`
 `- If you print a new line in josephus() not in print as mentioned in the instruction this will lead to extra line for each print, you may lose points because of it`
 
+
+<strong>Please copy the main.c and pe11.c you submitted to this directory</strong>
+
 ## print() function (10 points)
-- To test your function we compiled your code with -DJOSEPHUS flag. Your print() function with our josephus() solution in pe10.obj2.</br>
-The command used for compiling is : </br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DJOSEPHUS pe10.obj2 main.c pe10.c -o pe10`</br>
+- To test your function we compiled using the following command:
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror`</br>
 Then run the following command:</br>
 `./pe10 10 2 1 > sptest.txt`</br>
 - The correct output of this case is in `ptest`, your answer in `sptest.txt`, you can `diff` to find the error if there is any.</br>
