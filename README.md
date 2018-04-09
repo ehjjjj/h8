@@ -1,19 +1,19 @@
 
-# HW11 grading policy
+# HW12 grading policy
 <strong>  &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; \*\*\*ATTENTION : Read it to the last line before sending any email\*\*\* </strong> </br> <br>
 `- If you did not use the proper flags (i.e forgetting to use -Werror -Wvla) while compiling may lead to compile error. Regrade is not possible for such cases`
 
 <br/>
 
-<strong>Please copy the main.c and pe11.c you submitted to this directory</strong>
+<strong>Please copy the main.c and pa12.c you submitted to this directory</strong>
 
 ## init() function (10 points)
 \- To test your function we compiled your code using the following command:</br>
 
-`#Non-circular single linkedlist "tail->next=NULL"
+`#Non-circular single linkedlist "tail->next=NULL" <br>
 gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINT.obj -o pa12`</br>
 
-`#Circular single linkedlist "tail->next=head"
+`#Circular single linkedlist "tail->next=head" <br>
 gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINITC.obj -o pa12`</br> 
 
 \- Then run the following command:</br>
