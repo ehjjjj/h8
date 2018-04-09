@@ -5,7 +5,7 @@
 
 <br/>
 
-<strong>Please copy the main.c and pa12.c you submitted to this directory</strong>
+<strong>Please download what you have submitted on BB, copy the main.c and pa12.c to this directory</strong>
 
 ## init() function (10 points)
 \- To test your function we compiled your code based on your implementation using one of the following commands:</br>
