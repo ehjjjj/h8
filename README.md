@@ -7,9 +7,15 @@
 
 <strong>Please copy the main.c and pe11.c you submitted to this directory</strong>
 
-## print() function (10 points)
+## init() function (10 points)
 \- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DINSL -DINSF -DINSA -DDelA -DDELFM -DDELAM -DFREEMEM -DL main.c pe11.c ./cases/testp.obj -o pe11`</br>
+
+`#Non-circular single linkedlist "tail->next=NULL"
+gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINT.obj -o pa12`</br>
+
+`#Circular single linkedlist "tail->next=head"
+gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINITC.obj -o pa12`</br> 
+
 \- Then run the following command:</br>
 `./pe11 ./cases/testp`</br>
 \- The correct output of this case is in `./cases/testpsol`. <br>
