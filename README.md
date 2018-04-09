@@ -10,11 +10,11 @@
 ## init() function (10 points)
 \- To test your function we compiled your code using the following command:</br>
 
-`#Non-circular single linkedlist "tail->next=NULL" </br>
-gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINT.obj -o pa12`</br>
+`#Non-circular single linkedlist "tail->next=NULL"` </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINT.obj -o pa12`</br> </br>
 
-`#Circular single linkedlist "tail->next=head" </br>
-gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINITC.obj -o pa12`</br> 
+`#Circular single linkedlist "tail->next=head"` </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINITC.obj -o pa12`</br> 
 
 \- Then run the following command:</br>
 `./pe11 ./cases/testp`</br>
