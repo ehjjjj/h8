@@ -17,73 +17,40 @@
 `gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINITC.obj -o pa12`</br> 
 
 \- Then run the following command:</br>
-`./pe11 ./cases/testp`</br>
-\- The correct output of this case is in `./cases/testpsol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=10-(x/10)\*10. </br>
+`./pa12 -J 10 5 1 > scase1.txt`</br>
+\- The correct output of this case is in `./cases/case1`. <br>
+\- To calculate your grade: count the number of different lines (x). your grade=10-(x/9)\*10. </br>
 
 	
-## getLength() function (6 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSL -DINSF -DINSA -DDelA -DDELFM -DDELAM -DFREEMEM main.c pe11.c ./cases/testl.obj -o pe11`</br>
-\- Then run the following command:</br>
-`./pe11 ./cases/testl`</br>
-\- The correct output of this case is in `./cases/testlsol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=6-(x/3)\*6. </br>
+## print() function (10 points)
+\- To test your function we compiled your code based on your implementation using one of the following commands:</br>
 
-## insertFirst() function (14 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSA -DINSL -DDELFM -DDelA -DDELAM -DL -DFREEMEM main.c pe11.c ./cases/test1.obj -o pe11`</br>
-\- Then run the following command:</br>
-`./pe11 ./cases/test1`</br>
-\- The correct output of this case is in `./cases/test1sol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=14-(x/10)\*14. </br>
+<strong>Non-circular single linkedlist "tail->next=NULL"</strong> </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DINIT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testPRINT.obj -o pa12`</br> 
 
-## insertLast() function (14 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSA -DINSF -DDELFM -DDelA -DDELAM -DL -DFREEMEM main.c pe11.c ./cases/test2.obj -o pe11`</br>
-\- Then run the following command:</br>
-`./pe11 ./cases/test2`</br>
-\- The correct output of this case is in `./cases/test2sol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=14-(x/10)\*14. </br>
+<strong>Circular single linkedlist "tail->next=head"</strong> </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DINIT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testPRINTC.obj -o pa12`</br> 
 
-## insertAt() function (14 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSL -DINSF -DDELFM -DDelA -DDELAM -DL -DFREEMEM main.c pe11.c ./cases/test3.obj -o pe11`</br>
 \- Then run the following command:</br>
-`./pe11 ./cases/test3`</br>
-\- The correct output of this case is in `./cases/test3sol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=14-(x/10)\*14. </br>
+`./pa12 -J 10 5 1 > scase1.txt`</br>
+\- The correct output of this case is in `./cases/case1`. <br>
+\- To calculate your grade: count the number of different lines (x). your grade=10-(x/9)\*10. </br>
 
-## deleteAt() function (14 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSL -DINSF -DINSA -DDELFM -DDELAM -DL -DFREEMEM main.c pe11.c ./cases/test4.obj -o pe11`</br>
-\- Then run the following command:</br>
-`./pe11 ./cases/test4`</br>
-\- The correct output of this case is in `./cases/test4sol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=14-(x/10)\*14. </br>
+## josp() function (80 points)
+\- To test your function we compiled your code based on your implementation using one of the following commands:</br>
 
-## deleteFirstMatch() function (14 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSL -DINSF -DINSA -DDelA -DDELAM -DL -DFREEMEM main.c pe11.c ./cases/test5.obj -o pe11`</br>
-\- Then run the following command:</br>
-`./pe11 ./cases/test5`</br>
-\- The correct output of this case is in `./cases/test5sol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=14-(x/10)\*14. </br>
+<strong>Non-circular single linkedlist "tail->next=NULL"</strong> </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DINIT -DPRINT -DINITII -DPRINTII -DJOSPII main.c pa12.c ./cases/testJOSPC.obj -o pa12`</br> 
 
-## deleteAllMatches() function (14 points)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSL -DINSF -DINSA -DDelA -DDELFM -DL -DFREEMEM main.c pe11.c ./cases/test6.obj -o pe11`</br>
-\- Then run the following command:</br>
-`./pe11 ./cases/test6`</br>
-\- The correct output of this case is in `./cases/test6sol`. <br>
-\- To calculate your grade: count the number of different lines (x). your grade=14-(x/10)\*14. </br>
+<strong>Circular single linkedlist "tail->next=head"</strong> </br>
+`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DINIT -DPRINT -DINITII -DPRINTII -DJOSPII main.c pa12.c ./cases/testJOSP.obj -o pa12`</br> 
 
-## freeMemory() function (10%)
-\- To test your function we compiled your code using the following command:</br>
-`gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINSL -DINSF -DINSA -DDelA -DDELFM -DDELAM -DL main.c pe11.c ./cases/testmem.obj -o pe11`</br>
-\- Then run the following command:</br>
-`valgrind ./pe11 ./cases/test1`</br>
-\- If there is any memory leak you will lose 10% of your final grade.
+\-This function has four test cases 20 each.
+- case1:  "./pa12 -J 10 5 1 > scase1.txt". The correct output of this case is in `./cases/case1`. Grade_Case1=20-(x/9)\*20. </br>
+- case2:  "./pa12 -J 20 2 2 > scase2.txt". The correct output of this case is in `./cases/case2`. Grade_Case2=20-(x/9)\*20.</br>
+- case3:  "./pa12 -J 40 10 3 > scase3.txt". The correct output of this case is in `./cases/case3`. Grade_Case2=20-(x/13)\*20.</br>
+- case4:  "./pa12 -J 60 30 3 > scase4.txt". The correct output of this case is in `./cases/case4`. Grade_Case2=20-(x/19)\*20.</br>
+
 
 ## Late penalty
 - You will lose 2 points per hour late.
