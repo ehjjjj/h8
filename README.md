@@ -8,7 +8,7 @@
 <strong>Please copy the main.c and pa12.c you submitted to this directory</strong>
 
 ## init() function (10 points)
-\- To test your function we compiled your code using the following command:</br>
+\- To test your function we compiled your code based on your implementation using one of the following commands:</br>
 
 <strong>Non-circular single linkedlist "tail->next=NULL"</strong> </br>
 `gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -DPRINT -DINITII -DPRINTII -DJOSPI -DJOSPII main.c pa12.c ./cases/testINT.obj -o pa12`</br> 
